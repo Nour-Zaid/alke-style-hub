@@ -26,7 +26,7 @@ const App = () => (
       <CartProvider>
         <Toaster />
         <Sonner />
-        <BrowserRouter>
+        <BrowserRouter basename="/alke-style-hub">
           <Routes>
             <Route element={<Layout />}>
               <Route path="/" element={<Index />} />
