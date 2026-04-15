@@ -3,8 +3,8 @@ import react from "@vitejs/plugin-react-swc";
 import path from "path";
 import { componentTagger } from "lovable-tagger";
 
-// https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
+  base: "/alke-style-hub/",
   server: {
     host: "::",
     port: 8080,
@@ -18,9 +18,5 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
     dedupe: ["react", "react-dom", "react/jsx-runtime", "react/jsx-dev-runtime", "@tanstack/react-query", "@tanstack/query-core"],
-     },
-    export default defineConfig ({base: "/alke-style-hub/",
-    plugins: [react()]
-                                  });                                                               
- 
+  },
 }));
